@@ -31,7 +31,7 @@ const routes = [
 ];
 
 function generateSitemap() {
-  const baseUrl = 'https://wahngai.work/';
+  const baseUrl = 'https://wahngai.work';
   const currentDate = new Date().toISOString().split('T')[0];
   
   const urls = routes.map(route => 
@@ -65,7 +65,7 @@ ${urls}
 
 function generateRobotsTxt() {
   // 統一域名，修正錯誤
-  const baseUrl = 'https://wahngai.work/';
+  const baseUrl = 'https://wahngai.work';
   
   const robotsContent = `# https://www.robotstxt.org/robotstxt.html
 User-agent: *
